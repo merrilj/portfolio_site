@@ -1,13 +1,6 @@
 import React, { Component } from 'react'
 import { SlideUp } from 'animate-components'
-import { Card, Icon } from 'semantic-ui-react'
-
-const extra = (
-  <a>
-    <Icon name='user' />
-    16 Friends
-  </a>
-)
+import { Button } from 'semantic-ui-react'
 
 export default class Dashboard extends Component {
   render() {
@@ -16,21 +9,10 @@ export default class Dashboard extends Component {
         <SlideUp>
           <h1 style={styles.header}>Merril Jeffs</h1>
           <h2 style={styles.tagline}>Software Developer</h2>
+
           <div>
-            <Card
-              image='/assets/images/avatar/large/elliot.jpg'
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-              extra={extra}
-            />
-            <Card
-              image='/assets/images/avatar/large/elliot.jpg'
-              header='Elliot Baker'
-              meta='Friend'
-              description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-              extra={extra}
-            />
+            <Button style={styles.buttons} size='large' inverted color='blue'>Projects</Button>
+            <Button style={styles.buttons} size='large' inverted color='blue'>About</Button>
           </div>
 
         </SlideUp>
@@ -59,5 +41,11 @@ const styles = {
     fontSize: '2.5em',
     textAlign: 'center',
     marginTop: '0'
+  },
+  buttons: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginRight: '0'
   }
 }
