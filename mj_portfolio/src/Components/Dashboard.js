@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
-import { SlideUp } from 'animate-components'
+import { SlideUp, FadeInDown } from 'animate-components'
 import { Button } from 'semantic-ui-react'
 
 export default class Dashboard extends Component {
   render() {
     return (
       <div style={styles.content}>
-        <SlideUp>
+
+        <FadeInDown>
           <nav>
-            <ul style={styles.navbar}>
+            <ul style={styles.ul}>
               <li style={styles.listItems}>
                 <a href="#" style={styles.btn}>About</a>
               </li>
@@ -20,6 +21,9 @@ export default class Dashboard extends Component {
               </li>
             </ul>
           </nav>
+        </FadeInDown>
+
+        <SlideUp>
           <h1 style={styles.header}>Merril Jeffs</h1>
           <h2 style={styles.tagline}>Software Developer</h2>
 
@@ -32,7 +36,8 @@ export default class Dashboard extends Component {
 const styles = {
   content: {
     display: 'flex',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
     width: '100%'
   },
   header: {
@@ -51,11 +56,12 @@ const styles = {
     textAlign: 'center',
     marginTop: '0'
   },
-  navbar: {
+  ul: {
     display: 'flex',
     fontFamily: 'Work Sans, sans-serif',
     fontSize: '1.5em',
     listStyleType: 'none',
+    float: 'left'
   },
   listItems: {
     padding: '0.5em',
@@ -64,5 +70,6 @@ const styles = {
   },
   btn: {
     color: '#ffffff'
-  }
+  },
+
 }
