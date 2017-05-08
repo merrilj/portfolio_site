@@ -7,13 +7,21 @@ export default class Dashboard extends Component {
     return (
       <div style={styles.content}>
         <SlideUp>
+          <nav>
+            <ul style={styles.navbar}>
+              <li style={styles.listItems}>
+                <a href="#" style={styles.btn}>About</a>
+              </li>
+              <li style={styles.listItems}>
+                <a href="#" style={styles.btn}>Projects</a>
+              </li>
+              <li style={styles.listItems}>
+                <a href="#" style={styles.btn}>Contact</a>
+              </li>
+            </ul>
+          </nav>
           <h1 style={styles.header}>Merril Jeffs</h1>
           <h2 style={styles.tagline}>Software Developer</h2>
-
-          <div>
-            <Button style={styles.buttons} size='large' inverted color='blue'>Projects</Button>
-            <Button style={styles.buttons} size='large' inverted color='blue'>About</Button>
-          </div>
 
         </SlideUp>
       </div>
@@ -25,27 +33,36 @@ const styles = {
   content: {
     display: 'flex',
     justifyContent: 'center',
+    width: '100%'
   },
   header: {
     fontSize: '3em',
     paddingTop: '1em',
-    color: '#87cddd',
+    color: '#ffffff',
     fontFamily: 'Work Sans, sans-serif',
     fontSize: '4em',
     textAlign: 'center',
     marginBottom: '0'
   },
   tagline: {
-    color: '#87cddd',
+    color: '#ffffff',
     fontFamily: 'Work Sans, sans-serif',
     fontSize: '2.5em',
     textAlign: 'center',
     marginTop: '0'
   },
-  buttons: {
+  navbar: {
     display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginRight: '0'
+    fontFamily: 'Work Sans, sans-serif',
+    fontSize: '1.5em',
+    listStyleType: 'none',
+  },
+  listItems: {
+    padding: '0.5em',
+    float: 'left',
+    color: '#ffffff'
+  },
+  btn: {
+    color: '#ffffff'
   }
 }
