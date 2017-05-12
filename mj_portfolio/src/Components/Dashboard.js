@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { SlideUp, FadeInDown } from 'animate-components'
-import { Icon } from 'semantic-ui-react'
 
 export default class Dashboard extends Component {
   render() {
@@ -8,7 +7,7 @@ export default class Dashboard extends Component {
       <div style={styles.content}>
 
         <FadeInDown>
-          <nav>
+          <nav style={styles.nav}>
             <ul style={styles.ul}>
               <li style={styles.listItems}>
                 <a href="#" style={styles.btn}>About</a>
@@ -17,7 +16,7 @@ export default class Dashboard extends Component {
                 <a href="#" style={styles.btn}>Projects</a>
               </li>
               <li style={styles.listItems}>
-                <a href="#" style={styles.btn}>Contact</a>
+                <a href="#" style={styles.btn}>Resume</a>
               </li>
             </ul>
           </nav>
@@ -35,10 +34,6 @@ export default class Dashboard extends Component {
 
 const styles = {
   content: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    width: '100%'
   },
   header: {
     fontSize: '3em',
@@ -47,7 +42,6 @@ const styles = {
     fontFamily: 'Work Sans, sans-serif',
     fontSize: '4em',
     textAlign: 'center',
-    marginBottom: '0'
   },
   tagline: {
     color: '#ffffff',
@@ -57,19 +51,19 @@ const styles = {
     marginTop: '0'
   },
   ul: {
-    display: 'flex',
     fontFamily: 'Work Sans, sans-serif',
     fontSize: '1.5em',
     listStyleType: 'none',
-    float: 'left'
   },
   listItems: {
     padding: '0.5em',
     float: 'left',
-    color: '#ffffff'
+    color: '#ffffff',
   },
   btn: {
     color: '#ffffff'
   },
-
+  nav: {
+    positon: 'fixed',
+  }
 }
