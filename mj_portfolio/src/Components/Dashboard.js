@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { SlideUp, FadeInDown } from 'animate-components'
+import Navbar from './Navbar'
 
 export default class Dashboard extends Component {
   render() {
@@ -7,33 +8,23 @@ export default class Dashboard extends Component {
       <div style={styles.content}>
 
         <FadeInDown>
-          <nav style={styles.nav}>
-            <ul style={styles.ul}>
-              <li style={styles.listItems}>
-                <a href="#" style={styles.btn}>About</a>
-              </li>
-              <li style={styles.listItems}>
-                <a href="#" style={styles.btn}>Projects</a>
-              </li>
-              <li style={styles.listItems}>
-                <a href="#" style={styles.btn}>Resume</a>
-              </li>
-            </ul>
-          </nav>
+          <Navbar />
         </FadeInDown>
-
-        <SlideUp>
-          <h1 style={styles.header}>Merril Jeffs</h1>
-          <h2 style={styles.tagline}>Software Developer</h2>
-
-        </SlideUp>
+        <div style={styles.merril}>
+          <SlideUp>
+            <h1 style={styles.header}>Merril Jeffs</h1>
+            <h2 style={styles.tagline}>Software Developer</h2>
+          </SlideUp>
+        </div>
       </div>
     )
   }
 }
 
 const styles = {
-  content: {
+  merril: {
+    display: 'flex',
+    justifyContent: 'center'
   },
   header: {
     fontSize: '3em',
@@ -50,20 +41,4 @@ const styles = {
     textAlign: 'center',
     marginTop: '0'
   },
-  ul: {
-    fontFamily: 'Work Sans, sans-serif',
-    fontSize: '1.5em',
-    listStyleType: 'none',
-  },
-  listItems: {
-    padding: '0.5em',
-    float: 'left',
-    color: '#ffffff',
-  },
-  btn: {
-    color: '#ffffff'
-  },
-  nav: {
-    positon: 'fixed',
-  }
 }
