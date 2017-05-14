@@ -29,13 +29,13 @@ const styles = {
   header: {
     fontSize: '3em',
     paddingTop: '1em',
-    color: '#ffffff',
+    color: '#fff',
     fontFamily: 'Work Sans, sans-serif',
     fontSize: '4em',
     textAlign: 'center',
   },
   tagline: {
-    color: '#ffffff',
+    color: '#fff',
     fontFamily: 'Work Sans, sans-serif',
     fontSize: '2.5em',
     textAlign: 'center',
