@@ -7,14 +7,14 @@ import About from './About'
 export default class Dashboard extends Component {
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <div>
           <FadeInDown>
             <Navbar />
           </FadeInDown>
         </div>
 
-        <div>
+        <div style={styles.about}>
           <SlideUp>
             <About />
           </SlideUp>
@@ -25,23 +25,14 @@ export default class Dashboard extends Component {
 }
 
 const styles = {
-  merril: {
+  container: {
+    width: '100%',
+    height: 'auto',
+    margin: '0 auto',
+    position: 'relative'
+  },
+  about: {
     display: 'flex',
     justifyContent: 'center'
-  },
-  header: {
-    fontSize: '3em',
-    paddingTop: '1em',
-    color: '#fff',
-    fontFamily: 'Work Sans, sans-serif',
-    fontSize: '4em',
-    textAlign: 'center',
-  },
-  tagline: {
-    color: '#fff',
-    fontFamily: 'Work Sans, sans-serif',
-    fontSize: '2.5em',
-    textAlign: 'center',
-    marginTop: '0'
-  },
+  }
 }
