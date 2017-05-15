@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { SlideUp, FadeInDown } from 'animate-components'
 import Navbar from './Navbar'
+import Resume from './Resume'
 
 export default class Dashboard extends Component {
   render() {
