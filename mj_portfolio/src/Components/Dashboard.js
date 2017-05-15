@@ -2,19 +2,21 @@ import React, { Component } from 'react'
 import { SlideUp, FadeInDown } from 'animate-components'
 import Navbar from './Navbar'
 import Resume from './Resume'
+import About from './About'
 
 export default class Dashboard extends Component {
   render() {
     return (
-      <div style={styles.content}>
+      <div>
+        <div>
+          <FadeInDown>
+            <Navbar />
+          </FadeInDown>
+        </div>
 
-        <FadeInDown>
-          <Navbar />
-        </FadeInDown>
-        <div style={styles.merril}>
+        <div>
           <SlideUp>
-            <h1 style={styles.header}>Merril Jeffs</h1>
-            <h2 style={styles.tagline}>Software Developer</h2>
+            <About />
           </SlideUp>
         </div>
       </div>
