@@ -3,6 +3,7 @@ import { SlideUp, FadeInDown } from 'animate-components'
 import Navbar from './Navbar'
 import Resume from './Resume'
 import About from './About'
+import Projects from './Projects'
 
 export default class Dashboard extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class Dashboard extends Component {
           </FadeInDown>
         </div>
 
-        <div style={styles.about}>
+        <div>
           <SlideUp>
             <About />
           </SlideUp>
@@ -29,10 +30,5 @@ const styles = {
     width: '100%',
     height: 'auto',
     margin: '0 auto',
-    position: 'relative'
-  },
-  about: {
-    display: 'flex',
-    justifyContent: 'center'
   }
 }
