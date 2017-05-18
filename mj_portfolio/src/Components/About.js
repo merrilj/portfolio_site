@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Button } from 'semantic-ui-react'
+import { Button, Popup } from 'semantic-ui-react'
 
 export default class About extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div style={styles.picDiv}>
           <img src={require("../Images/merril.JPG")} style={styles.image} />
         </div>
 
@@ -19,17 +19,23 @@ export default class About extends Component {
             I am a Full Stack Developer who thinks its great to build cool stuff. Beyond coding, I have a passion for aviation and travel, and I plan to get my private pilot's license. I also love playing sports, cheering for the Broncos, reading, and a little hiking and camping in between.
           </p>
           <span style={styles.contact}>
+            Please reach out!
+            <br />
             720.397.0410
             <br />
             merrilj@yahoo.com
           </span>
         </div>
 
-        <div>
-          <img style={styles.icons} src="https://www.mentorthing.com/auth/assets/img/icons/linkedin.svg" />
-          <Button circular color='#fff' icon='linkedin' />
-          <Button circular color='white' icon='github' />
-          <Button circular color='white' icon='email' />
+        <div style={styles.iconsDiv}>
+          <Button href='https://www.linkedin.com/in/merrilj/' style={styles.icons} circular icon='linkedin large' />
+          <Button href='https://github.com/merrilj' style={styles.icons} circular icon='github large' />
+          <Button href='mailto:merrilj@yahoo.com' style={styles.icons} circular icon='mail large' />
+          <Popup
+            trigger={<Button style={styles.icons} icon='phone large' circular />}
+            content='720.397.0410' style={styles.popupContent}
+            position='right center'
+          />
         </div>
       </div>
     )
@@ -39,11 +45,12 @@ export default class About extends Component {
 const styles = {
   header: {
     fontSize: '3em',
-    paddingTop: '1em',
+    paddingTop: '0.3em',
     color: '#fff',
     fontFamily: 'Work Sans, sans-serif',
     fontSize: '4em',
     textAlign: 'center',
+    marginBottom: '0'
   },
   title: {
     color: '#fff',
@@ -56,21 +63,42 @@ const styles = {
     fontFamily: 'Work Sans, sans-serif',
     color: '#fff',
     fontSize: '1.5em',
-    textAlign: 'center'
+    textAlign: 'center',
+    paddingTop: '1em',
+    width: '50%',
+    margin: '0 auto'
+  },
+  picDiv: {
+    display: 'flex',
+    alignItems: 'center',
+    paddingTop: '4em'
   },
   image: {
-    width: '25%',
+    width: '15%',
     height: 'auto',
     borderRadius: '50%',
+    margin: '0 auto'
   },
   contact: {
     color: '#fff',
     fontFamily: 'Work Sans, sans-serif',
     fontSize: '1.3em',
-    textAlign: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    paddingTop: '1em'
   },
   icons: {
-    width: '2.5em',
-    height: '2.5em'
+    margin: '0.5em',
+  },
+  iconsDiv: {
+    paddingTop: '2em',
+    paddingBottom: '4em',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  popupContent: {
+    fontSize: '1.3em',
+    fontFamily: 'Work Sans, sans-serif',
+    fontWeight: 'bold'
   }
 }
