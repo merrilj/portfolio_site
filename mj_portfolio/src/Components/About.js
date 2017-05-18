@@ -10,8 +10,8 @@ export default class About extends Component {
         </div>
 
         <div>
-          <h1 style={styles.header}>Merril Jeffs</h1>
-          <h2 style={styles.title}>Software Developer</h2>
+          <p style={styles.header}>Merril Jeffs</p>
+          <p style={styles.title}>Software Developer</p>
         </div>
 
         <div>
@@ -19,11 +19,7 @@ export default class About extends Component {
             I am a Full Stack Developer who thinks its great to build cool stuff. Beyond coding, I have a passion for aviation and travel, and I plan to get my private pilot's license. I also love playing sports, cheering for the Broncos, reading, and a little hiking and camping in between.
           </p>
           <span style={styles.contact}>
-            Please reach out!
-            <br />
-            720.397.0410
-            <br />
-            merrilj@yahoo.com
+            Please feel free to reach out!
           </span>
         </div>
 
@@ -48,16 +44,17 @@ const styles = {
     paddingTop: '0.3em',
     color: '#fff',
     fontFamily: 'Work Sans, sans-serif',
-    fontSize: '4em',
     textAlign: 'center',
-    marginBottom: '0'
+    marginBottom: '0',
+    fontWeight: 'bold'
   },
   title: {
     color: '#fff',
     fontFamily: 'Work Sans, sans-serif',
-    fontSize: '2.5em',
+    fontSize: '2em',
     textAlign: 'center',
-    marginTop: '0'
+    marginTop: '0',
+    fontWeight: 'bold'
   },
   summary: {
     fontFamily: 'Work Sans, sans-serif',
@@ -91,14 +88,12 @@ const styles = {
     margin: '0.5em',
   },
   iconsDiv: {
-    paddingTop: '2em',
-    paddingBottom: '4em',
+    paddingTop: '0.7em',
     display: 'flex',
     justifyContent: 'center',
   },
   popupContent: {
     fontSize: '1.3em',
     fontFamily: 'Work Sans, sans-serif',
-    fontWeight: 'bold'
   }
 }

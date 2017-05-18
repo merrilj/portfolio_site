@@ -2,19 +2,14 @@ body {
   background-color: #23B9CD;
 }
 
-h3 > a {
+nav ul li > a {
   position: relative;
   color: #fff;
   text-decoration: none;
-
 }
 
-h3 > a:hover {
-  color: #fff;
-  top: -5px;
-}
 
-h3 > a:before {
+nav ul li > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -29,7 +24,7 @@ h3 > a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-h3 > a:hover:before {
+nav ul li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
