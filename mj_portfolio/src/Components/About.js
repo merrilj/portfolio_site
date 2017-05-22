@@ -67,8 +67,7 @@ const styles = {
   },
   picDiv: {
     display: 'flex',
-    alignItems: 'center',
-    paddingTop: '4em'
+    alignItems: 'center'
   },
   image: {
     width: '15%',

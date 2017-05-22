@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 export default class Resume extends Component {
   render () {
     return (
-      <div>
-        <object data="../Images/Resume.pdf" type="application/pdf" width="600" height="1200">
+      <div style={styles.hmm}>
+        <object style={styles.resume} data={require("../Images/Resume.pdf")} type="application/pdf">
           alt : <a href="../Images/Resume.pdf">test.pdf</a>
         </object>
       </div>
@@ -12,4 +12,14 @@ export default class Resume extends Component {
   }
 }
 
-const styles = {}
+const styles = {
+  resume: {
+    width: '800',
+    height: '1000'
+  },
+  hmm: {
+    margin: '0 auto',
+    alignItems: 'center'
+
+  }
+}
