@@ -23,7 +23,7 @@ export default class Navbar extends Component {
 const styles = {
   nav: {
     position: 'absolute',
-    top: '0'
+    top: '0',
   },
   ul: {
     fontFamily: 'Work Sans, sans-serif',

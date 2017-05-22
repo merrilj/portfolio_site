@@ -9,7 +9,7 @@ export default class Dashboard extends Component {
   render() {
     return (
       <div style={styles.container}>
-        <div>
+        <div style={styles.navbar}>
           <FadeInDown>
             <Navbar />
           </FadeInDown>
@@ -17,7 +17,7 @@ export default class Dashboard extends Component {
 
         <div>
           <SlideUp>
-            <About />
+            <Resume />
           </SlideUp>
         </div>
       </div>
@@ -30,5 +30,8 @@ const styles = {
     width: '100%',
     height: 'auto',
     margin: '0 auto',
+  },
+  navbar: {
+    paddingBottom: '4em'
   }
 }
