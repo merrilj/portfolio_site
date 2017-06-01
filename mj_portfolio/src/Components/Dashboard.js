@@ -17,7 +17,7 @@ export default class Dashboard extends Component {
 
         <div>
           <SlideUp>
-            <Resume />
+            <Projects />
           </SlideUp>
         </div>
       </div>
