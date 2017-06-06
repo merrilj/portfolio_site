@@ -33,9 +33,9 @@ const styles = {
   listItems: {
     padding: '0.5em',
     float: 'left',
-    color: '#ffffff',
+    color: '#fff',
   },
   btn: {
-    color: '#ffffff'
+    color: '#fff'
   },
 }

@@ -19,7 +19,7 @@ export default class Projects extends Component {
   addProjects() {
 
     const projects = [
-      { title: 'Skyfly', summary: 'Skyfly maps all current flights around the world in real-time, providing flight details such as aircraft, flight number, speed, and elevation.', tech: 'JavaScript, Materialize CSS, jQuery, AJAX, API Integration', image: '../Images/skyfly.png' },
+      { title: 'Skyfly', summary: 'Skyfly maps all current flights around the world in real-time, providing flight details such as aircraft, flight number, speed, and elevation.', tech: 'JavaScript, Materialize CSS, jQuery, AJAX, API Integration', image: '../Images/skyfly.png', live: 'www.flyway.pro', github: '' },
       { title: 'Flyway', summary: 'Hmm', tech: 'HTML, JavaScript, etc', image: '../Images/flyway.png' },
       { title: 'Fresh', summary: 'Fresh is a full stack yada yada yada', tech: 'Express, Node, and shit', image: '../Images/fresh.png' }
     ]
@@ -40,7 +40,7 @@ export default class Projects extends Component {
                 <Button>View Github</Button>
               </List.Content>
 
-              <Image avatar src={require(project.image)} />
+              <Image avatar src={project.image} />
               <List.Content>
                 <List.Header>{project.title}</List.Header>
                 <p>
