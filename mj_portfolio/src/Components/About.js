@@ -16,7 +16,7 @@ export default class About extends Component {
 
         <div>
           <p style={styles.summary}>
-            I am a Full Stack Developer who thinks its great to build cool stuff. Beyond coding, I have a passion for aviation and travel, and I plan to get my private pilot's license. I also love playing sports, cheering for the Broncos, reading, and a little hiking and camping in between.
+            I am a Full Stack Developer who thinks its great to build cool stuff. Beyond coding, I have a passion for aviation and travel, and I plan to get my private pilot's license soon.
           </p>
           <span style={styles.contact}>
             Please feel free to reach out!

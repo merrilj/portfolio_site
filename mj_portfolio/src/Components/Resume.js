@@ -14,13 +14,16 @@ export default class Resume extends Component {
 
 const styles = {
   main: {
-    display: 'flex',
-    justifyContent: 'center',
+    margin: '0 auto',
+    padding: '0',
+    alignItems: 'center',
+    width: '100%',
+    marginLeft: 'auto',
+    marginRight: 'auto'
   },
   resume: {
     width: '850',
     height: '1100',
     paddingBottom: '2em',
-    margin: '0 auto'
   },
 }
