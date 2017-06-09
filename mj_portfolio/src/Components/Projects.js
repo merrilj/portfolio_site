@@ -64,6 +64,7 @@ const styles = {
     textAlign: 'center'
   },
   listColumn: {
-    width: '100%'
+    width: '100%',
+    paddingTop: '3em'
   }
 }
