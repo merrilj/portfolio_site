@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { SlideUp, FadeInDown } from 'animate-components'
+import { SlideUp } from 'animate-components'
 import Navbar from './Navbar'
 import Resume from './Resume'
 import About from './About'
@@ -9,15 +9,14 @@ export default class Dashboard extends Component {
   render() {
     return (
       <div style={styles.container}>
+
         <div style={styles.navbar}>
-          <FadeInDown>
-            <Navbar />
-          </FadeInDown>
+          <Navbar />
         </div>
 
         <div>
           <SlideUp>
-            <About />
+            <Projects />
           </SlideUp>
         </div>
       </div>
